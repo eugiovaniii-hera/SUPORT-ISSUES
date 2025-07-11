@@ -1,0 +1,55 @@
+name: 📨 Ticket de Suporte por E-mail
+description: Criação automática de chamado recebido por e-mail
+title: "[SUPORTE] "
+labels: ["automated", "triagem"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por utilizar o suporte do Lolla 26! Este chamado foi criado automaticamente a partir de um e-mail recebido.
+
+  - type: input
+    id: remetente
+    attributes:
+      label: ✉️ Remetente do E-mail
+      placeholder: email@exemplo.com
+    validations:
+      required: true
+
+  - type: input
+    id: data
+    attributes:
+      label: 📅 Data do E-mail Recebido
+      placeholder: AAAA-MM-DD HH:MM
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: 📄 Descrição do Problema
+      placeholder: Corpo do e-mail recebido
+    validations:
+      required: true
+
+  - type: input
+    id: link_drive
+    attributes:
+      label: 📎 Link para Anexos (Drive ou outro)
+      placeholder: https://drive.google.com/...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: ⏱️ Prioridade
+      options:
+        - Baixa
+        - Média
+        - Alta
+      default: 1
+    validations:
+      required: true
