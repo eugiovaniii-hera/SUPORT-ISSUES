@@ -1,4 +1,7 @@
-# 🎟️ Central de Suporte - Lolla 26
+# PROJETO EM DESENVOLVIMENTO 
+
+
+🎟️ Central de Suporte - Lolla 26
 
 Este repositório é usado para registrar, acompanhar e resolver tickets de suporte relacionados ao projeto Lolla 26. Os chamados são criados automaticamente a partir de e-mails recebidos ou manualmente pela equipe.
 
